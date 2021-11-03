@@ -1,2 +1,0 @@
-# navermain
-html/css
