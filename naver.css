@@ -1,0 +1,300 @@
+/*선택자: selector*/
+
+#fixed{
+    top: 50px;
+    right: 50px;
+position: fixed;
+display: inline-block;
+width: 100px;
+height: 100px;
+border: 1px solid black;
+border-radius: 50px;
+
+
+}
+#header-top {
+    float:right;
+    height:21px;
+    color:888;
+    letter-spacing: -2px; 
+    font-size:14px;
+    line-height: 29px;
+    
+}
+
+
+
+.header-top-logo1{
+    
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    background-position:-817px -555px; 
+    background-repeat: no-repeat;
+    vertical-align: top;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    margin-left: 5px;
+    }
+
+    
+.header-top-logo2{
+    
+    display: inline-block;
+    width: 126px;
+    height: 28px;
+    background-position:-567px -530px; 
+    background-repeat: no-repeat;
+    vertical-align: top;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    margin-left: 1px;
+    }
+
+
+    .header-top-logo3{
+    
+        display: inline-block;
+        width: 89px;
+        height: 46px;
+        background-position:-436px -283px; 
+        background-repeat: no-repeat;
+        vertical-align: top;
+        background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+        margin-left: 5px;
+        }
+        
+
+nav,html,body{
+    padding: 0;
+    margin:0;
+    
+    }
+    
+.blind{
+/*.은 클래스*/
+position: absolute;
+overflow: hidden;
+clip:rect(0 0 0 0 );
+margin:-1px;
+width:1px;
+height:1px;
+
+
+}
+
+*{
+box-sizing: border-box;
+
+
+}
+
+header{
+height: 170px;
+margin-bottom: -8px;
+}
+
+#header-search{
+    clear: both;
+    padding-top: 29px;
+    }
+.center-align-relative{
+    margin: 0 auto; width:1080px;
+ 
+}
+
+/*Cascading style sheet*/
+/* html에 적용된 속성이 div속성에 덮어씌어지게 되고...*/
+
+#header-search h1{
+/*header-center의 자식인 h1이 적용된다*/
+
+display: inline-block;
+width: 238px;
+height:51px;
+background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+background-position:0-160px; 
+background-size: 471px 442px;
+background-repeat:no-repeat;
+vertical-align:middle;
+position: relative;
+top: -7px;
+text-indent: 200%;
+overflow: hidden;
+text-decoration: none;
+
+
+
+
+}
+/*
+#header-center h1{
+    (자손을 찾는 방법) => 제로초가 이거 된다고 했는데 안먹음!! 
+  =} 
+
+*/
+
+
+
+#header-search h2{
+    display: none; /*스크린리더에도 안읽힘(=>개발자,elements요소에 나와있음, html의 문서역할(문서구조를 정해주는용도),
+    blind 속성(css) 태그에 적용하면 스크린리더에 읽힘(웹 접근성을 높혀준다) */
+}
+
+
+#header-search fieldset {
+    width: 521px;
+    height:49px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 12px 0 12px 10px;
+    /*padding: 시계방향*/
+    border: 2px solid #03cf5d; /*hex표기법*/
+    vertical-align: middle;
+    position: relative;
+}
+
+#header-search fieldset input{
+    border: none;
+    padding: 0;
+    outline: none;
+    vertical-align: top;
+    width: 405px;
+    height: 23px;
+
+}
+
+#header-search button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    padding: 0;
+    background: #03cf5d;
+    position: absolute;
+    right: -1px;
+    top: -2px;
+ 
+    
+    
+}
+
+#search-image {
+    background: url(spcopy1.png);
+    width: 45px;
+    height:50px;
+    display: inline-block;
+    background-position:2px;
+   background-size: 25px 25px;
+   background-repeat:no-repeat;
+   margin: -4px;
+    margin-left: 9px;
+}
+
+
+nav{
+    
+    height: 46px;
+    border-top: 1px solid #f1f3f6;
+    
+    }
+
+.nav-divider{
+    display:inline-block;
+    margin: 15px 16px 0;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3;
+
+
+}
+#search-ranking{
+    position: absolute;
+    top:16px;
+    bottom:0;
+    
+}
+
+#rank-number{
+    margin-top: -9px;
+    color: #00ab33;
+    font-size: 16px;
+
+}
+
+nav ul{
+margin:0;
+padding: 0 0 0 4px;
+list-style: none;
+display:inline-block;
+}
+
+nav li{
+    display: inline-block;
+}
+
+
+
+nav li:first-child span:first-child { /*메일이모티콘*/
+    width: 24px;
+    height: 21px;
+    background-position: -417px -277px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    -webkit-background-size: 444px 439px;
+    background-size: 444px 439px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    
+}
+
+
+.nav-menu-front{
+    color: #03c75a;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: -.3px;    
+    padding-left:14px;
+
+}
+
+.nav-menu-back{
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: -.3px;    
+    padding-left:14px;
+
+
+}
+
+
+
+nav li:nth-child(6) span:first-child { /*쇼핑*/
+     
+    width: 29px;
+    height: 21px;
+    background-position: -417px -229px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    -webkit-background-size: 444px 439px;
+    background-size: 444px 439px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left:14px;
+
+}
+
+nav li:nth-child(7) span:first-child { /*쇼핑라이브*/
+    width: 59px;
+    height: 21px;
+    background-position: -199px -302px;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    -webkit-background-size: 444px 439px;
+    background-size: 444px 439px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left:14px;
+    
+
+}
+
+
+
