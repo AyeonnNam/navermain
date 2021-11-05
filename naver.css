@@ -4,6 +4,10 @@
     
 }
 
+._banner ._banner_in{
+    margin: 0 auto; width:1080px;
+    
+    }
 ._banner{
     height: 50px;
 
@@ -49,12 +53,18 @@ img{
     margin: 0 aut0;
 }
 
+.zzz{
+    display: inline-block;
+    margin-top: 13px;
+
+}
+
 ._banner_in_text2{
     padding-right: 20px;
     font-size: 18px;
     color: black;
     padding-left: 46px;
-    
+    display:block;
 }
 
 ._banner_in_text{
@@ -72,4 +82,47 @@ img{
         background-position: 0 -21px;
 
 }
+._banner ._banner_in a {
 
+text-decoration: none;
+}
+._banner_download {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    height: 49px;
+    width: 78px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    vertical-align: top;
+}
+
+._banner_download span {
+        background-color: #255ec8;
+        text-align: center;
+        margin: 9px 0;
+        height: 31px;
+        display: block;
+        line-height: 31px;
+        border-radius: 15px;
+
+    }
+
+    button{
+        background-color: transparent;
+        padding-left: 10px;
+        
+    }
+
+    .button_text {
+
+        font-size: 11px;
+        height: 13px;
+        top: 0;
+        right: 0;
+        color: #666;
+        opacity: .7;
+        border:0;
+        
+    }
