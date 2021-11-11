@@ -8,27 +8,25 @@
 </head>
 <body>
     <h1><a href="RNB.html">R&B</a></h1>
-    <input type= "button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    ">
+  
 
-    <input type= "button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    ">
+<input type="button" value="night" onclick="
+var target =  document.querySelector('body');
+if(this.value === 'night'){
 
-<input id="night_day" type="button" value="night" onclick="
-if(document.querySelector('#night_day').value === 'night'){
+ target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value ='day';
 
- document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    document.querySelector('#night_day').value ='day';
+    var links = document.querySelctorAll('a');
+    var i =0;
+    links[i].style.color='powderblue';
+    i = i+1;
 
 }else{
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    document.querySelector('#night_day').value ='night';
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value ='night';
 }
 
 
@@ -47,5 +45,26 @@ if(document.querySelector('#night_day').value === 'night'){
      </P>
  
 <p>   The term "rhythm and blues" has undergone a number of shifts in meaning. In the early 1950s, it was frequently applied to blues records.[5] Starting in the mid-1950s, after this style of music contributed to the development of rock and roll, the term "R&B" became used to refer to music styles that developed from and incorporated electric blues, as well as gospel and soul music. In the 1960s, several British rock bands such as the Rolling Stones, the Who and the Animals were referred to and promoted as being R&B bands; posters for the Who's residency at the Marquee Club in 1964 contained the slogan, "Maximum R&B".[6] Their mix of rock and roll and R&B is now known as "British rhythm and blues". By the end of the 1970s, the term "rhythm and blues" had changed again and was used as a blanket term for soul and funk. In the late 1980s, a newer style of R&B developed, becoming known as "contemporary R&B". It combines rhythm and blues with elements of pop, soul, funk, disco, hip hop, and electronic music.</p>
+
+
+
+<input type="button" value="night" onclick="
+var target =  document.querySelector('body');
+if(this.value === 'night'){
+
+ target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value ='day';
+
+}else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value ='night';
+}
+
+
+
+">
+
 </body>
 </html>
